@@ -186,7 +186,6 @@ object {
 }
 
 .channel {
-    grid-column: -7 / -1;
     width: 100%;
     height: 320px;
     border: none;
@@ -316,10 +315,6 @@ footer {
 
 /* fallback */
 @supports (-webkit-appearance: none) {
-    section img[title] {
-        cursor: context-menu;
-    }
-
     section img[onclick] {
         cursor: pointer;
     }
