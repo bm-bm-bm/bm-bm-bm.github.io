@@ -56,7 +56,7 @@ nav {
 }
 
 nav img {
-
+    visibility: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -66,6 +66,7 @@ nav img {
 }
 
 nav a:hover+img {
+    visibility: visible;
     width: 240px;
 }
 
@@ -174,6 +175,37 @@ td {
     grid-column: 1 / -1;
 }
 
+.pdf {
+    grid-column: 1 / 8;
+    height: 320px;
+}
+
+object {
+    width: 100%;
+    height: 100%;
+}
+
+.channel {
+    grid-column: -7 / -1;
+    width: 100%;
+    height: 320px;
+    border: none;
+    color-scheme: only dark;
+    /* FIXME: overscroll contain doesn't work*/
+    overflow: auto;
+    overscroll-behavior: contain;
+}
+
+@media (min-width: 640px) {
+    .pdf {
+        height: 720px;
+    }
+
+    .channel {
+        height: 480px;
+    }
+}
+
 section iframe {
     width: 100%;
     height: 240px;
@@ -273,17 +305,6 @@ section img[onclick] {
         justify-self: center;
         width: 552px;
     }
-}
-
-.channel {
-    grid-column: -7 / -1;
-    width: 100%;
-    height: 480px;
-    border: none;
-    color-scheme: only dark;
-    /* BUG: overscroll contain doesn't work*/
-    overflow: auto;
-    overscroll-behavior: contain;
 }
 
 /* footer */
