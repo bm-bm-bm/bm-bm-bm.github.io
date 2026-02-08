@@ -31,6 +31,7 @@ a {
     text-decoration: underline dotted;
 }
 
+/* FIXME: Safari mobile */
 a:hover,
 a:active {
     color: rgb(249, 249, 249);
@@ -51,6 +52,21 @@ header {
 
 nav {
     grid-column: 1 / 3;
+    height: fit-content;
+}
+
+nav img {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    transition: width 0.2s;
+}
+
+nav a:hover+img {
+    width: 240px;
 }
 
 /* FIXME: fixed width: 50px not working */
@@ -221,7 +237,11 @@ section img[onclick] {
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1510px) {
+    .mosaics {
+        grid-column: 1 / 9
+    }
+
     .mosaics img {
         width: 240px;
     }
@@ -260,6 +280,7 @@ section img[onclick] {
     width: 100%;
     height: 480px;
     border: none;
+    color-scheme: only dark;
     /* BUG: overscroll contain doesn't work*/
     overflow: auto;
     overscroll-behavior: contain;
