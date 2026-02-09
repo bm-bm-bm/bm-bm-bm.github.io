@@ -31,7 +31,6 @@ a {
     text-decoration: underline dotted;
 }
 
-/* FIXME: Safari mobile */
 a:hover,
 a:active {
     color: rgb(249, 249, 249);
@@ -70,7 +69,6 @@ nav a:hover+img {
     width: 240px;
 }
 
-/* FIXME: fixed width: 50px not working */
 canvas {
     position: fixed;
     bottom: 0;
@@ -116,53 +114,6 @@ section>* {
     position: relative;
     float: left;
     padding-right: 8px;
-}
-
-.info a {
-    cursor: help;
-}
-
-.info table {
-    position: absolute;
-    z-index: 1;
-    visibility: hidden;
-    padding: 4px;
-    background-color: #f9f9f9f2;
-    border-radius: 4px;
-    font-family: monospace;
-    color: #000000;
-    top: 10px;
-    left: 100%;
-}
-
-.info table::after {
-    content: " ";
-    position: absolute;
-    top: 10%;
-    right: 100%;
-    margin-top: -6px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: transparent #f9f9f9 transparent transparent;
-}
-
-#hausaufgabe .info table {
-    left: 72%;
-}
-
-th {
-    font-weight: normal;
-    text-align: start;
-    vertical-align: top;
-}
-
-td {
-    text-align: end;
-    padding-left: 8px;
-}
-
-.info:hover table {
-    visibility: visible;
 }
 
 .description {
