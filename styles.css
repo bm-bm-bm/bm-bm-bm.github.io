@@ -128,7 +128,7 @@ section>* {
 
 .pdf {
     grid-column: 1 / 8;
-    height: 320px;
+    height: 280px;
 }
 
 object {
@@ -148,7 +148,7 @@ object {
 
 @media (min-width: 640px) {
     .pdf {
-        height: 720px;
+        height: 680px;
     }
 
     .channel {
